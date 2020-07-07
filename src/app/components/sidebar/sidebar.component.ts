@@ -9,33 +9,34 @@ declare interface RouteInfo {
 }
 export const ROUTES: RouteInfo[] = [
   { path: "/dashboard", title: "Dashboard", icon: "dashboard", class: "" },
-  { path: "/user-profile", title: "Viaticos", icon: "person", class: "" },
+  { path: "/user-profile", title: "Usuario", icon: "person", class: "" },
   {
-    path: "/table-list",
-    title: "crear viaticos",
+    path: "/viaticos",
+    title: "Viaticos",
     icon: "content_paste",
     class: "",
   },
   {
+    path: "/viaticos-create-or-edit",
+    title: "crear viaticos",
+    icon: "commute",
+    class: "",
+  },
+  {
     path: "/typography",
-    title: "Reliquidacion",
+    title: "Reliquidación",
     icon: "library_books",
     class: "",
   },
-  { path: "/icons", title: "Aprobacion", icon: "bubble_chart", class: "" },
-  { path: "/maps", title: "Administracion", icon: "location_on", class: "" },
+  { path: "/icons", title: "Aprobación", icon: "bubble_chart", class: "" },
+  { path: "/maps", title: "Administración", icon: "location_on", class: "" },
   {
     path: "/notifications",
     title: "usuarios",
     icon: "notifications",
     class: "",
   },
-  {
-    path: "/viaticos",
-    title: "Viaticos",
-    icon: "commute",
-    class: "",
-  },
+
   // {
   //   path: "/viaticos",
   //   title: "Viaticos",

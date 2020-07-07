@@ -9,6 +9,8 @@ import { MapsComponent } from "../../maps/maps.component";
 import { NotificationsComponent } from "../../notifications/notifications.component";
 import { UpgradeComponent } from "../../upgrade/upgrade.component";
 import { MainComponent } from "../../viaticos/main/main.component";
+import { CreateOrEditComponent } from "../../viaticos/create-or-edit/create-or-edit.component";
+
 export const AdminLayoutRoutes: Routes = [
   // {
   //   path: '',
@@ -61,4 +63,5 @@ export const AdminLayoutRoutes: Routes = [
   { path: "notifications", component: NotificationsComponent },
   { path: "upgrade", component: UpgradeComponent },
   { path: "viaticos", component: MainComponent },
+  { path: "viaticos-create-or-edit", component: CreateOrEditComponent },
 ];
