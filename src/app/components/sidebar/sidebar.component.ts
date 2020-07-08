@@ -22,20 +22,20 @@ export const ROUTES: RouteInfo[] = [
     icon: "commute",
     class: "",
   },
-  {
-    path: "/typography",
-    title: "Reliquidación",
-    icon: "library_books",
-    class: "",
-  },
-  { path: "/icons", title: "Aprobación", icon: "bubble_chart", class: "" },
-  { path: "/maps", title: "Administración", icon: "location_on", class: "" },
-  {
-    path: "/notifications",
-    title: "usuarios",
-    icon: "notifications",
-    class: "",
-  },
+  // {
+  //   path: "/viaticos",
+  //   title: "Reliquidación",
+  //   icon: "library_books",
+  //   class: "",
+  // },
+  // { path: "/icons", title: "Aprobación", icon: "bubble_chart", class: "" },
+  // { path: "/maps", title: "Administración", icon: "location_on", class: "" },
+  // {
+  //   path: "/notifications",
+  //   title: "usuarios",
+  //   icon: "notifications",
+  //   class: "",
+  // },
 
   // {
   //   path: "/viaticos",
