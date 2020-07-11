@@ -25,6 +25,10 @@ import { MatSelectModule } from "@angular/material/select";
 import { MatNativeDateModule } from "@angular/material/core";
 import { MatDatepickerModule } from "@angular/material/datepicker";
 // import { MatDaterangepickerModule } from "@angular/material/datepicker";
+import { MatTableModule } from "@angular/material/table";
+import { MatPaginatorModule } from "@angular/material/paginator";
+import { MatDialogModule } from "@angular/material/dialog";
+import { MatSortModule } from "@angular/material/sort";
 @NgModule({
   imports: [
     CommonModule,
@@ -41,6 +45,10 @@ import { MatDatepickerModule } from "@angular/material/datepicker";
     MatNativeDateModule,
     MatDatepickerModule,
     MatAutocompleteModule,
+    MatPaginatorModule,
+    MatTableModule,
+    MatDialogModule,
+    MatSortModule,
   ],
   declarations: [
     DashboardComponent,
