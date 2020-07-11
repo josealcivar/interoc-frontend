@@ -14,7 +14,7 @@ import { UpgradeComponent } from "../../upgrade/upgrade.component";
 
 import { MainComponent } from "../../viaticos/main/main.component";
 import { CreateOrEditComponent } from "../../viaticos/create-or-edit/create-or-edit.component";
-
+// import {MatStartDate } from "@angular/material/Start";
 import { MatButtonModule } from "@angular/material/button";
 import { MatInputModule } from "@angular/material/input";
 import { MatRippleModule } from "@angular/material/core";
@@ -22,7 +22,9 @@ import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatCheckboxModule } from "@angular/material/checkbox";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { MatSelectModule } from "@angular/material/select";
-
+import { MatNativeDateModule } from "@angular/material/core";
+import { MatDatepickerModule } from "@angular/material/datepicker";
+// import { MatDaterangepickerModule } from "@angular/material/datepicker";
 @NgModule({
   imports: [
     CommonModule,
@@ -36,6 +38,8 @@ import { MatSelectModule } from "@angular/material/select";
     MatSelectModule,
     MatTooltipModule,
     MatCheckboxModule,
+    MatNativeDateModule,
+    MatDatepickerModule,
   ],
   declarations: [
     DashboardComponent,
