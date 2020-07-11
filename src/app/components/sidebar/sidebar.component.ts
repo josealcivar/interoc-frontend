@@ -29,7 +29,7 @@ export const ROUTES: RouteInfo[] = [
   //   class: "",
   // },
   // { path: "/icons", title: "Aprobación", icon: "bubble_chart", class: "" },
-  // { path: "/maps", title: "Administración", icon: "location_on", class: "" },
+  // // { path: "/maps", title: "Administración", icon: "location_on", class: "" },
   // {
   //   path: "/notifications",
   //   title: "usuarios",

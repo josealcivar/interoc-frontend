@@ -11,7 +11,7 @@ import { IconsComponent } from "../../icons/icons.component";
 import { MapsComponent } from "../../maps/maps.component";
 import { NotificationsComponent } from "../../notifications/notifications.component";
 import { UpgradeComponent } from "../../upgrade/upgrade.component";
-
+import { MatAutocompleteModule } from "@angular/material/autocomplete";
 import { MainComponent } from "../../viaticos/main/main.component";
 import { CreateOrEditComponent } from "../../viaticos/create-or-edit/create-or-edit.component";
 // import {MatStartDate } from "@angular/material/Start";
@@ -40,6 +40,7 @@ import { MatDatepickerModule } from "@angular/material/datepicker";
     MatCheckboxModule,
     MatNativeDateModule,
     MatDatepickerModule,
+    MatAutocompleteModule,
   ],
   declarations: [
     DashboardComponent,
