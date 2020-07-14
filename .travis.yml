@@ -17,6 +17,8 @@ deploy:
   provider: heroku
   skip_cleanup: true
   keep_history: true
+  github_token: $GITHUB_TOKEN
+  COMMIT_MESSAGE: "Deploy del proyecto"
   api_key:
     secure: "secretkey"
   on: 
