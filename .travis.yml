@@ -1,0 +1,33 @@
+languaje: node_js
+
+cache: 
+  directories:
+  -node_modules
+  -~&.npm
+
+node_js:
+  - '12'
+
+git:
+  depth: 3
+
+script:
+  yarn build # travis maneja yarn si usas npm no importa
+deploy: 
+  provider: heroku
+  skip_cleanup: true
+  keep_history: true
+  api_key:
+    secure: "secretkey"
+  on: 
+    brach: master
+
+  app: 
+    master: interoc-frontend-staging
+    production: interoc-frontend-production
+
+
+  local_dir: dist/
+  target_branck:gh
+
+    
