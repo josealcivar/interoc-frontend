@@ -2,7 +2,7 @@ languaje: node_js
 
 cache:
   directories:
-    - node_modules
+    - ./node_modules
     - ~/.npm
 
 node_js:
@@ -13,6 +13,7 @@ git:
 
 script:
   - yarn lint # travis maneja yarn si usas npm no importa
+  - yarn test-headless # UnitTest
   - yarn postinstall
 
 notification:
