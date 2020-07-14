@@ -12,7 +12,7 @@ git:
   depth: 3
 
 script:
-  - yarn lint # travis maneja yarn si usas npm no importa
+  # - yarn lint # travis maneja yarn si usas npm no importa
   - yarn test-headless # UnitTest
   - yarn postinstall
 
