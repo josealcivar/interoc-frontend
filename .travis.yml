@@ -11,7 +11,9 @@ node_js:
 git:
   depth: 3
 
-script: yarn test # travis maneja yarn si usas npm no importa
+script:
+  - yarn lint # travis maneja yarn si usas npm no importa
+  - yarn postinstall
 
 notification:
   email:
