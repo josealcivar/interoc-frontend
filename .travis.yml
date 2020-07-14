@@ -27,7 +27,7 @@ deploy:
   provider: heroku
   skip_cleanup: true
   keep_history: true
-  COMMIT_MESSAGE: "Deploy del proyecto"
+  # COMMIT_MESSAGE: "Deploy del proyecto"
   api_key:
     4f403f0f-f1e0-4b2e-b051-6fce3c0def0e
     # secure: "secretkey"
