@@ -3,6 +3,15 @@ import { MatSort } from "@angular/material/sort";
 import { MatPaginator } from "@angular/material/paginator";
 import { MatTableDataSource } from "@angular/material/table";
 
+/**
+ * @description componente principal del modulo de Viaticos.
+ *              donde se muestra un listado de todos
+ *              los viativos emitidos por los empleados.
+ * @author anthony Acosta
+ * @components se llama al componente create-or-edit para la creacion de un nuevo viatico
+ *
+ */
+
 export interface PeriodicElement {
   name: string;
   position: number;
@@ -90,6 +99,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ["./main.component.css"],
 })
 export class MainComponent implements OnInit {
+  // cabecera principal de la tabla de datos
   displayedColumns: string[] = [
     "position",
     "name",
@@ -104,8 +114,25 @@ export class MainComponent implements OnInit {
   @ViewChild(MatSort, { static: true }) sort: MatSort;
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
 
+  ListaViaticos: any[] = []; // Lista de viaticos
+
   ngOnInit(): void {
-    this.dataSource.sort = this.sort;
-    this.dataSource.paginator = this.paginator;
+    this.dataSource.sort = this.sort; //* funcion de @angular para ordenar la tabla
+    this.dataSource.paginator = this.paginator; //* funcion interna de angular para paginar
+
+    this.ObtenerListaViaticos(); // se caga la funcion al iniciar el componente
+  }
+
+  /**
+   * Listado de viaticos.
+   * * Funcion obtener lista de viaticos
+   * TODO: se obtiene la informacion del API backend
+   *
+   */
+  ObtenerListaViaticos(): void {
+    //* servicio de api para obtener datos
+    // this._viaticosService.getDataviaticos().subscribe((response) => {
+    //   this.ListaViaticos = response;
+    // });
   }
 }

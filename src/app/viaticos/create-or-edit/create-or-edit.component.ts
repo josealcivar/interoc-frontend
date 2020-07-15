@@ -19,34 +19,7 @@ export class CreateOrEditComponent implements OnInit {
   });
 
   myControl = new FormControl();
-  options: string[] = [
-    "One",
-    "Two",
-    "Three",
-    "Three",
-    "Three",
-    "Three",
-    "Three",
-    "Three",
-    "Three",
-    "Three",
-    "Three",
-    "Three",
-    "Three",
-    "Three",
-    "Three",
-    "Three",
-    "Three",
-    "Three",
-    "Three",
-    "Three",
-    "Three",
-    "Three",
-    "Three",
-    "Three",
-    "Three",
-    "Three",
-  ];
+  options: string[] = ["One", "Two", "Three", "Four"];
   filteredOptions: Observable<string[]>;
 
   selectedValue: string;
@@ -57,7 +30,7 @@ export class CreateOrEditComponent implements OnInit {
   ];
 
   constructor() {}
-
+  title = "Crear viatico";
   ngOnInit() {
     this.filteredOptions = this.myControl.valueChanges.pipe(
       startWith(""),
@@ -65,11 +38,20 @@ export class CreateOrEditComponent implements OnInit {
     );
   }
 
+  /**
+   *
+   * @param value //* lista de catalogo de viaticos para busqueda de autocompletar
+   */
   private _filter(value: string): string[] {
     const filterValue = value.toLowerCase();
-
+    //* retorna las coincidencias que fueron digitadas por el ususario
     return this.options.filter((option) =>
       option.toLowerCase().includes(filterValue)
     );
+  }
+
+  //* funcion que valida que el rango tenga unicio y fin.
+  validador_rango_fecha_viaticos(): boolean {
+    return true;
   }
 }

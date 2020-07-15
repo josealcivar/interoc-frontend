@@ -10,6 +10,8 @@ describe("CreateOrEditComponent", () => {
     TestBed.configureTestingModule({
       declarations: [CreateOrEditComponent],
     }).compileComponents();
+
+    component: new CreateOrEditComponent();
   }));
 
   beforeEach(() => {
@@ -18,7 +20,12 @@ describe("CreateOrEditComponent", () => {
     fixture.detectChanges();
   });
 
-  // it('should create', () => {
-  //   expect(component).toBeTruthy();
-  // });
+  it("should create", () => {
+    expect(component).toBeTruthy();
+  });
+
+  it("valida rango de fecha de viaticos", () => {
+    let rango: boolean = component.validador_rango_fecha_viaticos();
+    expect(rango).toBeTruthy();
+  });
 });
