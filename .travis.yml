@@ -19,7 +19,7 @@ script:
 notification:
   email:
     reciepients:
-      - alcivar372@gmail.com
+      - lenin.lima@corpcuster.com
     on_sucsess: always
     on_failure: always
 

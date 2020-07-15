@@ -50,8 +50,10 @@ export class CreateOrEditComponent implements OnInit {
     );
   }
 
-  //* funcion que valida que el rango tenga unicio y fin.
+  //* funcion que valida que el rango de fecha tenga unicio y fin.
   validador_rango_fecha_viaticos(): boolean {
+    //  Momentsjs fecha inicio - fecha fin
+    let fecha_inicio;
     return true;
   }
 }

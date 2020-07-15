@@ -4,9 +4,9 @@ import { MatPaginator } from "@angular/material/paginator";
 import { MatTableDataSource } from "@angular/material/table";
 
 /**
- * @description componente principal del modulo de Viaticos.
- *              donde se muestra un listado de todos
- *              los viativos emitidos por los empleados.
+ * @description //* componente principal del modulo de Viaticos.
+ *             //* donde se muestra un listado de todos
+ *              //* los viativos emitidos por los empleados.
  * @author anthony Acosta
  * @components se llama al componente create-or-edit para la creacion de un nuevo viatico
  *
