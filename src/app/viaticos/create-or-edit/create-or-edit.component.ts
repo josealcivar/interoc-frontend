@@ -76,7 +76,7 @@ export class CreateOrEditComponent implements OnInit {
   guardar_viatico(): void {
     this.showNotification("top", "right", 2);
     this.router.navigate(["/viaticos/"]);
-    setTimeout(function () {}, 2000);
+    setTimeout(function () {}, 1000);
   }
 
   showNotification(from, align, color) {
