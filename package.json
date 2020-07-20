@@ -45,16 +45,17 @@
     "express": "^4.17.1",
     "googleapis": "40.0.0",
     "jquery": "3.4.1",
+    "lodash": "^4.17.19",
     "moment": "2.24.0",
     "path": "^0.12.7",
     "perfect-scrollbar": "1.1.0",
     "popper.js": "1.15.0",
     "rxjs": "6.6.0",
     "rxjs-compat": "6.5.2",
-    "web-animations-js": "2.3.1",
-    "zone.js": "0.10.3",
     "tslint": "~6.1.0",
-    "typescript": "3.9.6"
+    "typescript": "3.9.6",
+    "web-animations-js": "2.3.1",
+    "zone.js": "0.10.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "0.1000.2",
