@@ -33,6 +33,7 @@ import { MatSortModule } from "@angular/material/sort";
   imports: [
     CommonModule,
     RouterModule.forChild(AdminLayoutRoutes),
+    RouterModule,
     FormsModule,
     ReactiveFormsModule,
     MatButtonModule,
