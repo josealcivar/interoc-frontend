@@ -22,8 +22,11 @@
                                 </div>
                                 <div class="col-md-3">
                                     <mat-form-field color=accent class="example-full-width">
-                                        <input matInput placeholder="Fecha solicitud" readonly>
+                                        <input matInput [(ngModel)]="fecha_socititud"
+                                            [ngModelOptions]="{standalone: true}" placeholder="Fecha solicitud"
+                                            readonly>
                                     </mat-form-field>
+
                                     <!-- <mat-form-field appearance="fill">
                                         <mat-label>Fecha solicitud</mat-label>
                                         <input matInput [matDatepicker]="picker">
@@ -32,7 +35,8 @@
                                     </mat-form-field>  -->
                                 </div>
                                 <div class="col-md-4">
-                                    <mat-checkbox color=warn class="example-margin">Reliquidada
+                                    <mat-checkbox color=warn [(ngModel)]="viaticos_component.reliquidada"
+                                        [ngModelOptions]="{standalone: true}" class="example-margin">Reliquidada
                                     </mat-checkbox>
                                     <!-- <mat-checkbox [formControl]="hideRequiredControl"></mat-checkbox> -->
                                     <!-- <mat-form-field class="example-full-width">
@@ -44,13 +48,15 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <mat-form-field class="example-full-width">
-                                        <input matInput placeholder="Status" type="text">
+                                        <input matInput placeholder="Status" [(ngModel)]="viaticos_component.status"
+                                            [ngModelOptions]="{standalone: true}" type="text">
                                     </mat-form-field>
                                 </div>
                                 <div class="col-md-6">
                                     <mat-form-field color=warn appearance="fill">
                                         <mat-label>Fecha liquidación</mat-label>
-                                        <input matInput [matDatepicker]="picker1">
+                                        <input matInput [(ngModel)]="viaticos_component.fecha_liquidacion"
+                                            [ngModelOptions]="{standalone: true}" [matDatepicker]="picker1">
                                         <mat-datepicker-toggle matSuffix [for]="picker1">
                                         </mat-datepicker-toggle>
                                         <mat-datepicker #picker1></mat-datepicker>
@@ -71,11 +77,16 @@
                                 </div>
 
                                 <div class="col-md-6">
+
                                     <mat-form-field color=warn appearance="fill">
                                         <mat-label>Fecha: desde - hasta</mat-label>
                                         <mat-date-range-input [formGroup]="range" [rangePicker]="picker">
-                                            <input matStartDate formControlName="start" placeholder="Start date">
-                                            <input matEndDate formControlName="end" placeholder="End date">
+                                            <input matStartDate formControlName="start"
+                                                [(ngModel)]="viaticos_component.fecha_desde"
+                                                [ngModelOptions]="{standalone: true}" placeholder="Start date">
+                                            <input matEndDate formControlName="end"
+                                                [(ngModel)]="viaticos_component.fecha_hasta"
+                                                [ngModelOptions]="{standalone: true}" placeholder="End date">
                                         </mat-date-range-input>
                                         <mat-datepicker-toggle matSuffix [for]="picker">
                                         </mat-datepicker-toggle>
@@ -133,7 +144,8 @@
                                         </div> -->
                                 </div>
                             </div>
-                            <button mat-raised-button type="submit" class="btn btn-info pull-right">
+                            <button mat-raised-button type="button" (click)="guardar_viatico($event)"
+                                class="btn btn-info pull-right">
                                 <span> Guardar <i class="material-icons">save</i> </span>
                             </button>
                             <div class="clearfix"></div>
@@ -144,7 +156,7 @@
                                 <div class="card-icon">
                                     <i class="material-icons">library_books</i>
                                 </div>
-                                <h4 class="card-title ">Detalles viaticos</h4>
+                                <h4 class="card-title ">Rubros viaticos</h4>
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">

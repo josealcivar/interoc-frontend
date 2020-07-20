@@ -135,4 +135,6 @@ export class MainComponent implements OnInit {
     //   this.ListaViaticos = response;
     // });
   }
+
+  openNewViatico(): void {}
 }
