@@ -73,6 +73,9 @@ export class CreateOrEditComponent implements OnInit {
     return true;
   }
 
+  /**
+   *  funcion para guardar viaticos
+   */
   guardar_viatico(): void {
     this.showNotification("top", "right", 2);
     this.router.navigate(["/viaticos/"]);
