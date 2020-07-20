@@ -77,16 +77,13 @@
                                 </div>
 
                                 <div class="col-md-6">
-
+                                    <!-- [(ngModel)]="viaticos_component.fecha_desde"
+                                    [ngModelOptions]="{standalone: true}" -->
                                     <mat-form-field color=warn appearance="fill">
                                         <mat-label>Fecha: desde - hasta</mat-label>
                                         <mat-date-range-input [formGroup]="range" [rangePicker]="picker">
-                                            <input matStartDate formControlName="start"
-                                                [(ngModel)]="viaticos_component.fecha_desde"
-                                                [ngModelOptions]="{standalone: true}" placeholder="Start date">
-                                            <input matEndDate formControlName="end"
-                                                [(ngModel)]="viaticos_component.fecha_hasta"
-                                                [ngModelOptions]="{standalone: true}" placeholder="End date">
+                                            <input matStartDate formControlName="start" placeholder="Start date">
+                                            <input matEndDate formControlName="end" placeholder="End date">
                                         </mat-date-range-input>
                                         <mat-datepicker-toggle matSuffix [for]="picker">
                                         </mat-datepicker-toggle>
